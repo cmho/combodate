@@ -2,9 +2,9 @@
   "name": "combodate",
   "version": "1.1.0",
   "description": "Dropdown date and time picker",
-  "author": "https://github.com/vitalets",
+  "author": "https://github.com/cmho",
   "license": "MIT",
-  "homepage": "https://github.com/vitalets/combodate",
+  "homepage": "https://github.com/cmho/combodate",
   "main": "src/combodate.js",
   "ignore": [
     "**/.*",

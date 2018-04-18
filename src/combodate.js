@@ -42,7 +42,8 @@
                 hour:   ['[Hh]', 'hours'],
                 minute: ['m',    'minutes'],
                 second: ['s',    'seconds'],
-                ampm:   ['[Aa]', '']
+                ampm:   ['[Aa]', ''],
+                zone:   ['Z',    'utcOffset']
             };
 
             this.$widget = $('<span class="combodate"></span>').html(this.getTemplate());
@@ -296,6 +297,14 @@
                 ];
             return items;
         },
+
+        fillZone: function() {
+            var items = this.fillCommon('Z');
+            for (var i = -7; i <= 7; i++) {
+                items.push([i, i]);
+            }
+            return items;
+        }
 
         /*
          Returns current date value from combos.
