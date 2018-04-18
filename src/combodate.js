@@ -304,7 +304,7 @@
                 items.push([i, i]);
             }
             return items;
-        }
+        },
 
         /*
          Returns current date value from combos.
